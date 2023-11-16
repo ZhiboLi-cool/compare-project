@@ -1,0 +1,8 @@
+*/node_modules
+
+parcel/.parcel-cache
+parcel/dist
+
+webpack/dist
+
+turbopack/.next
