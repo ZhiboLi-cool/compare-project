@@ -2,10 +2,11 @@ const path = require('path');  //nodejs内置模块
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  /**
-   * 入口
-   */
   entry: './src/index.tsx',
+  output: {
+    path: path.resolve(__dirname, 'dist'),  
+    filename: 'bundle.js'   
+  },
   devtool: 'inline-source-map',
   module: {
     rules: [
@@ -27,10 +28,6 @@ module.exports = {
   ],
   resolve: {
     extensions: [ '.tsx', '.ts', '.js' ],
-  },
-  output: {
-    path: path.resolve(__dirname, 'dist'),  
-    filename: 'bundle.js'   
   },
   devServer: {
     static: {

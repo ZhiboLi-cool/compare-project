@@ -2,6 +2,7 @@
 
 parcel/.parcel-cache
 parcel/dist
+parcel/src/components
 
 webpack/dist
 

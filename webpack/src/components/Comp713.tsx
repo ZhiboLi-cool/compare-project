@@ -1,5 +1,5 @@
 import React from 'react'
 
 export function Comp713() {
-    return <div>hello 713</div>
-  }
+  return <div>hello 713</div>
+}

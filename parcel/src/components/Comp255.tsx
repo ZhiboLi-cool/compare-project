@@ -1,3 +1,3 @@
 export function Comp255() {
-    return <div>hello 255</div>
-  }
+  return <div>hello 255</div>
+}

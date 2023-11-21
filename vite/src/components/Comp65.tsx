@@ -1,3 +1,3 @@
 export function Comp65() {
-    return <div>update hello 65</div>
-  }
+  return <div>update hello 65</div>
+}

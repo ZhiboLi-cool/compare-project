@@ -5,21 +5,23 @@ let renderCode = ``
 
 for (let i = 0; i < 100; i++) {
   imports += `import { Comp${i} } from './components/Comp${i}';\n`
-  renderCode += `<Comp${i}/>\n`
+  renderCode += `\t\t\t<Comp${i}/>\n`
   fs.writeFileSync(
     `src/components/Comp${i}.tsx`,
     `export function Comp${i}() {
-    return <div>update hello ${i}</div>
-  }`
+  return <div>update hello ${i}</div>
+}`
   )
 }
 
-const code = `
-${imports}
+const code = `${imports}
+
 export default function App() {
-  return <div>
-   ${renderCode}
-  </div>
+  return (
+    <div>
+${renderCode}
+    </div>
+  )
 }
 `
 

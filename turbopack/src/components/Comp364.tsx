@@ -1,3 +1,3 @@
 export function Comp364() {
-    return <div>hello 364</div>
-  }
+  return <div>hello 364</div>
+}

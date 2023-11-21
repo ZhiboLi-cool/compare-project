@@ -1,3 +1,3 @@
 export function Comp750() {
-    return <div>hello 750</div>
-  }
+  return <div>hello 750</div>
+}
